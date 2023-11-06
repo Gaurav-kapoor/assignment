@@ -1,0 +1,219 @@
+.books {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.books .slider-wrapper {
+    width: inherit;
+    height: inherit;
+}
+
+.books .slider-wrapper .slick-arrow {
+    width: 50px;
+    height: 50px;
+    appearance: none;
+    z-index: 1;
+    font-size: 0;
+}
+
+.books .slider-wrapper .slick-arrow::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    opacity: 1;
+    background: url('../images/slider_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.books .slider-wrapper .slick-arrow.slick-prev.slick-disabled:before, .slick-arrow.slick-next.slick-disabled:before {
+    opacity: .5;
+}
+
+.books .slider-wrapper .slick-prev {
+    left: 70px;
+    transform: rotate(180deg);
+}
+
+.books .slider-wrapper .slick-next {
+    right: 70px;
+}
+
+.books .slider-wrapper .image-wrap {
+    height: 600px;
+    width: 100%;
+}
+.books .slider-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.products {
+    min-height: 600px;
+    background-color: rgba(238, 238, 238, .15);
+    padding: 40px 0;
+}
+.products .breadcrumb ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.products .breadcrumb ul li{
+   margin: 0 10px;
+   font-size: 18px;
+   font-weight: 500;
+}
+.products .products-wrapper {
+    position: relative;
+}
+
+.products .products-wrapper.slide {
+    height: 0;
+}
+
+.products .review {
+    display: none;
+}
+
+.products .review ol {
+    width: 100%;
+    max-width: 500px;
+}
+
+.products .review ol li {
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}
+
+.products .review ol li a {
+    float: right;
+    margin-left: 10px;
+    font-size: 16px;
+    color: red;
+}
+
+.products .payment {
+    display: none;
+}
+
+.products .confirm table th {
+    padding: 0;
+}
+
+.products .confirm-order {
+    display: none;
+}
+
+.products .products-wrapper .dropdown {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+  }
+  .products .products-wrapper .dropdown .dropdown-list {
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    top: 71px;
+    border-radius: 8px;
+    left: 2px;
+    right: 2px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+    transform-origin: 50% 0;
+    display: none;
+    /* transform: scale(1, 0); */
+    transition: transform 0.15s ease-in-out 0.15s;
+    max-height: 66vh;
+    overflow-y: scroll;
+    z-index: 1;
+  }
+  .products .products-wrapper .dropdown .dropdown-option {
+    display: block;
+    padding: 8px 12px;
+    /* /*opacity: 0;* */
+    transition: opacity 0.15s ease-in-out;
+  }
+  .products .products-wrapper .dropdown .dropdown-label {
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 25px 15px;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .products .products-wrapper .dropdown .dropdown-label:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    background: url('../images/slider_arrow.svg') no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(90deg);
+
+  }
+  .products .products-wrapper .dropdown.on .dropdown-list {
+    transform: scale(1, 1);
+    transition-delay: 0s;
+  }
+  /* .dropdown.on .dropdown-list .dropdown-option {
+    opacity: 1;
+    transition-delay: 0.2s;
+  } */
+  .products .products-wrapper .dropdown.on .dropdown-label:before {
+    transform: rotate(-90deg);
+  }
+  .products .products-wrapper .dropdown [type=checkbox] {
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+  }
+  @media screen and (max-width:767px) {
+    .books {
+        height: 400px;
+    }
+    .books .slider-wrapper .image-wrap {
+        height: 400px;
+    }
+}
+  @media screen and (max-width:595px) {
+
+    .products .products-wrapper .dropdown .dropdown-label {
+        padding: 15px;
+    }
+    .products .products-wrapper .dropdown .dropdown-list  {
+        top: 53px;
+    }
+    .books .slider-wrapper .slick-arrow {
+        width: 50px;
+        height: 50px;
+        appearance: none;
+        z-index: 1;
+        font-size: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .books .slider-wrapper .slick-next {
+        right: 20px;
+        transform: translate(0) rotate(0);
+    }
+    .books .slider-wrapper .slick-prev {
+        left: 20px;
+        transform: translate(0) rotate(180deg);
+    }
+  }
