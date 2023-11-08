@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="styles/plugins/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="styles/plugins/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Books</title>
+</head>
+
+<body>
+
+    <section class="order-summary py-5">
+        <div class="container">
+            <h5 class="text-center">Order Summary</h5>
+            <div class="order-wrapper col-sm-8 col-12 m-auto d-flex justify-content-center align-items-center">
+                <div class="order-details col-sm-6 col-10">
+            
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Order No.</td>
+                            <td>Name</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>&#8377; 2500</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="order-details col-sm-6 col-10">
+                    <table class="table text-start">
+                        <tr>
+                            <td>Order No.</td>
+                            <td>Name</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Chris</td>
+                            <td>&#8377; 3000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="order-details col-sm-6 col-10">
+                    <table class="table text-start">
+                        <tr>
+                            <td>Order No.</td>
+                            <td>Name</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Timmothy</td>
+                            <td>&#8377; 5500</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="order-details col-sm-6 col-10">
+                    <table class="table text-start">
+                        <tr>
+                            <td>Order No.</td>
+                            <td>Name</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Robert</td>
+                            <td>&#8377; 1500</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="slider-wrapper mt-3">
+
+                <div class="text-wrap">
+                    <p>Order 1</p>
+                </div>
+
+                <div class="text-wrap">
+                    <p>Order 2</p>
+                </div>
+
+                <div class="text-wrap">
+                    <p>Order 3</p>
+                </div>
+
+                <div class="text-wrap">
+                    <p>Order 4</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="books">
+        <div class="slider-wrapper">
+
+            <div class="image-wrap">
+                <img src="images/wild_life.jpg" alt="cooking">
+            </div>
+
+            <div class="image-wrap">
+                <img src="images/literary.jpg" alt="cooking">
+            </div>
+
+            <div class="image-wrap">
+                <img src="images/cooking.jpg" alt="cooking">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="row">
+            <div class="breadcrumb col-md-3 col-12">
+                <ul>
+                    <li class="text-success">Product</li>
+                    <li>Review</li>
+                    <li>Payment</li>
+                    <li>Summary</li>
+                </ul>
+            </div>
+            <div class="products-wrapper col-md-8 col-12">
+                <h2 class="text-black mb-sm-5 mb-3">Select Products</h2>
+                <div class="dropdown" data-control="checkbox-dropdown">
+                    <label class="dropdown-label">Select</label>
+
+                    <div class="dropdown-list">
+
+                        <div class="list-wrap">
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Novels" />
+                                Novels
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Relegious Books" />
+                                Relegious Books
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Biographies" />
+                                Biographies
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="Megazines" />
+                                Megazines
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="General Knowledge Books" />
+                                General Knowledge Books
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                <button type="button" class="btn btn-secondary fs-5 mt-3 mt-sm-5 review-btn ms-auto d-block text-end" disabled>Next</button>
+                </div>
+            </div>
+            <div class="review col-md-8 col-12">
+                <h2 class="mb-5 text-black">Review added Products</h2>
+                <ol>
+                </ol>
+                <div class="btn-wrap">
+                <button type="button" class="btn btn-secondary fs-5 mt-3 edit">Edit</button>
+                <button type="button" class="btn btn-secondary fs-5 mt-3 next">Next</button>
+                </div>
+            </div>
+            <div class="payment col-md-8 col-12">
+                <h2 class="mb-5 text-black">Payment</h2>
+
+
+                <form class="row g-3">
+                    <h4 class="mb-2 text-black">Payment Method</h4>
+                    <select class="form-select">
+                        <option>Select</option>
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                        <option value="Credit & Debit Cards">Credit & Debit Cards</option>
+                    </select>
+                    <h4 class="mb-2 text-black">Delivery Address</h4>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="first" placeholder="First name"
+                            aria-label="First name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last" placeholder="Last name"
+                            aria-label="Last name">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" name="address" id="inputAddress"
+                            placeholder="1234 Main St">
+                    </div>
+
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary ms-auto d-block text-end confirm">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="confirm-order col-md-8 col-12">
+                <h4 class="mb-2 text-black">Confirmation</h4>
+                <h2 class="thank-you" style="display: none;">Thank You for Choosing Us!</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Payment Method</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                <div class="btn-wrap">
+                <button type="button" class="btn btn-primary text-end ms-auto checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="scripts/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
